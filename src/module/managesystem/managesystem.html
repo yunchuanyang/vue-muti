@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>VUE Project</title>
+</head>
+<body>
+<div class="mainHead navbar navbar-default navbar-fixed-top">
+<h1>管理系统</h1>
+</div>
+<style>
+.mainHead{
+    left: 20%;
+    right: 20%;
+    text-align: center;
+}
+.mainContent{
+    margin-top:80px;
+}
+ol,
+ul,
+li {
+  list-style-type: none;
+  padding: 5px 0;
+}
+.firstMenu ul{
+    width: 100%;
+}
+.firstMenu li{
+     background: #eeeeee;
+     text-align: center;
+}
+#secMenuList li{
+     background: #eeeeee;
+     text-align: center;
+}
+#secMenuList .secPartLi{
+    /*text-align: left;*/
+}
+#secMenuList .secChildLi{
+        /* margin-left:16%; */
+}
+.secChildUl{
+     margin-left:50%;
+}
+
+
+</style>
+<div class="mainContent container" >
+    <div class="row">
+
+        <div class="firstMenu col-md-1">
+            <div><p>一级菜单</p></div>
+            <div>
+                <ul>
+                    <li><a href="#">菜单A</a></li>
+                    <li><a href="#">菜单B</a></li>
+                    <li><a href="#">菜单C</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="col-md-11">
+            <div class="row">
+            	<div class="secMenu col-md-2">
+                    <div><p>二级菜单</p></div>
+                    <div id="secMenuList">
+                        <ul>
+                            <li class="secPartLi">
+                                <a href="#"><span>菜单a</span></a>
+                                <ul class="secChildUl">
+                                    <li class="secChildLi"><a href="#">功能1</a></li>
+                                    <li class="secChildLi"><a href="#">功能2</a></li>
+                                </ul>
+                            </li>
+                            <li class="secPartLi">
+                                <a href="#"><span>菜单b</span></a>
+                                <ul class="secChildUl">
+                                    <li class="secChildLi"><a href="#">功能i</a></li>
+                                    <li class="secChildLi"><a href="#">功能ii</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+        		</div>
+        		<div id="mainContent">
+                    <mycontent></mycontent>      
+                </div>
+        		
+            </div>
+        	
+        </div>
+
+    	
+    </div>
+
+	
+</div>
+<div class="mainFoot">
+	
+</div>
+<style>
+    /* .firstMenu li{
+        padding: 5px 0;
+    } */
+</style>
+
+</body>
+</html>
